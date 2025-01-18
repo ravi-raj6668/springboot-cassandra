@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-cassandra
+
+
+  cassandra:
+    contact-points: 127.0.0.1
+    port: 9042
+    local-datacenter: datacenter1
+    keyspace-name: my_keyspace
+
+server:
+  port: 8085
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: ravi7284
+    key-store-type: PKCS12
+    key-alias: selfsigned
+
